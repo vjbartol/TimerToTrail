@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".proyect.activities.CrearRutaActivity">
+
+    <Button
+        android:id="@+id/btVolverMain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/descartar"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btCrearRutaActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btCrearRutaActivity"
+        app:layout_constraintTop_toTopOf="@+id/btCrearRutaActivity" />
+
+    <Button
+        android:id="@+id/btCrearRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/crear"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btVolverMain"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTituloDistanciaCrearActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distanciaRuta"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etDistanciaRutaCrearRutaActivity"
+        app:layout_constraintStart_toStartOf="@+id/etDistanciaRutaCrearRutaActivity" />
+
+    <TextView
+        android:id="@+id/tvTituloAltMaxCrearActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AltMax"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etAlturaMaxRutaCrearRutaActivity"
+        app:layout_constraintStart_toStartOf="@+id/etAlturaMaxRutaCrearRutaActivity" />
+
+    <TextView
+        android:id="@+id/tvTituloAltMinCrearActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AltMin"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etAlturaMinRutaCrearRutaActivity"
+        app:layout_constraintStart_toStartOf="@+id/etAlturaMinRutaCrearRutaActivity" />
+
+    <TextView
+        android:id="@+id/tvTituloDesnivelCrearActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desnivel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etDesnivelRutaCrearRutaActivity"
+        app:layout_constraintStart_toStartOf="@+id/etDesnivelRutaCrearRutaActivity" />
+
+    <TextView
+        android:id="@+id/tvTituloDificultadCrearActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dificultadRuta"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spDificultadCrearRutaActivity"
+        app:layout_constraintStart_toStartOf="@+id/spDificultadCrearRutaActivity" />
+
+    <EditText
+        android:id="@+id/etDistanciaRutaCrearRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/spDificultadCrearRutaActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPoblacionRutaCrearRutaActivity"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvNombreRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/nombreRuta"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/etNombreRutaCrearRutaActivity"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloCrearRutaActivity" />
+
+    <TextView
+        android:id="@+id/tvTituloCrearRutaActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#F2F2F2"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/tituloCrearRuta"
+        android:textAlignment="center"
+        android:textColor="#040404"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombreRutaCrearRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreRuta"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/spDificultadCrearRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toTopOf="@+id/etDesnivelRutaCrearRutaActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDistanciaRutaCrearRutaActivity"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/etDesnivelRutaCrearRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/etAlturaMaxRutaCrearRutaActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spDificultadCrearRutaActivity"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etAlturaMaxRutaCrearRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/etAlturaMinRutaCrearRutaActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDesnivelRutaCrearRutaActivity"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/etAlturaMinRutaCrearRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/etUrlMapaRutaCrearRutaActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAlturaMaxRutaCrearRutaActivity"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/etUrlMapaRutaCrearRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btCrearRutaActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btSelecImage"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btSelecImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="SELECT IMG"
+        app:layout_constraintBottom_toBottomOf="@+id/etUrlMapaRutaCrearRutaActivity"
+        app:layout_constraintEnd_toStartOf="@+id/etUrlMapaRutaCrearRutaActivity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etUrlMapaRutaCrearRutaActivity" />
+
+    <EditText
+        android:id="@+id/etPoblacionRutaCrearRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/etDistanciaRutaCrearRutaActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreRutaCrearRutaActivity" />
+
+    <TextView
+        android:id="@+id/tvPoblacionRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poblacion"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etPoblacionRutaCrearRutaActivity"
+        app:layout_constraintStart_toStartOf="@+id/etPoblacionRutaCrearRutaActivity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

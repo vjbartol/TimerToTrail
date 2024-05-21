@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">TimeToTrail</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Registrar</string>
+    <string name="logo">logo</string>
+    <string name="tituloRegistro">Pantalla Registro</string>
+    <string name="tipoContraseña">(min 6 caract)</string>
+    <string name="nombreUsuario">Nombre Usuario</string>
+    <string name="crear">Publicar</string>
+    <string name="nombreRuta">NOMBRE:</string>
+    <string name="distanciaRuta">DISTANCIA </string>
+    <string name="dificultadRuta">DIFICULTAD </string>
+    <string name="favoritoRuta">FAV </string>
+    <string name="noFavoritoRuta">NO FAV</string>
+    <string name="descartar">DESCARTAR</string>
+    <string name="volver">VOLVER</string>
+    <string name="all">TODAS</string>
+    <string name="filtrar">FILTRAR</string>
+    <string name="tablon">TABLON</string>
+    <string name="logout">LOGOUT</string>
+    <string name="borrar">BORRAR</string>
+    <string name="nuevo">NUEVO</string>
+    <string name="quedadas">QUEDADAS</string>
+    <string name="AltMin">ALTURA MIN</string>
+    <string name="AltMax">ALTURA MAX</string>
+    <string name="desnivel">DESNIVEL</string>
+    <string name="tituloCrearRuta">NUEVA RUTA</string>
+    <string name="tituloFiltrarRutas">BUSCA LA MEJOR RUTA PARA TI</string>
+    <string name="tituloTablon">TABLON DE RUNNERS</string>
+    <string name="tituloPost">NUEVO COMENTARIO</string>
+    <string name="tituloQuedadas">QUEDADAS DE TRAIL</string>
+    <string name="borrarse">BORRARSE</string>
+    <string name="apuntarse">APUNTARSE</string>
+    <string name="descripcion">descripcion:</string>
+    <string name="lugar">lugar:</string>
+    <string name="diaHora">Dia y Hora:</string>
+    <string name="ruta">ruta:</string>
+    <string name="usuariosApuntados">Usuarios apuntados:</string>
+    <string name="postDe">El Post de:</string>
+    <string name="titulo">Titulo:</string>
+    <string name="cuerpo">Cuerpo:</string>
+    <string name="escrbieAqui">Escribe aqui:</string>
+    <string name="tituloOpinion">Titulo de la opinion:</string>
+    <string name="dia">dia:</string>
+    <string name="hora">hora:</string>
+    <string name="restablecerContraseña">Restablecer Contraseña</string>
+    <string name="nombreDeLaRuta">Nombre de la Ruta:</string>
+    <string name="poblacion">POBLACION:</string>
+    <string name="tituloCrearQuedada">¿ORGANIZANDO ALGO?</string>
+    <string name="filtroSinResultados">Resultados encontrados: 0</string>
+
+
+</resources>

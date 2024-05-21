@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#6DC36C" /> <!-- Cambia este valor por el color que desees -->
+    <corners android:radius="500dp" /> <!-- El radio determina la redondez del botón -->
+</shape>

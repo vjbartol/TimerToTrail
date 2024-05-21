@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "577931378295",
+    "project_id": "timetotrail-484f1",
+    "storage_bucket": "timetotrail-484f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577931378295:android:f632a57a785f99d50dd072",
+        "android_client_info": {
+          "package_name": "com.example.timetotrail"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR0GlFrkcITIvPLcEm4nGLtdqi0OLKIYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

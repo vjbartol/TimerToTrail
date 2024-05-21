@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".proyect.activities.DetalleRutaActivity">
+
+    <Button
+        android:id="@+id/btModificarRuta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:text="MODIFICAR"
+        app:layout_constraintBottom_toBottomOf="@+id/btBackDetalleRuta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btBorrarRuta"
+        app:layout_constraintTop_toTopOf="@+id/btBackDetalleRuta"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvAltMaxDetalleRutaActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:paddingRight="15dp"
+        android:text="@string/AltMax"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvAltMinDetalleRutaActivity"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/etNombreDetalleRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etPoblacionDetalleRutaActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvNombreDetalleRutaActivity"
+        app:layout_constraintTop_toTopOf="@+id/tvNombreDetalleRutaActivity"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvNombreDetalleRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:paddingRight="15dp"
+        android:text="@string/nombreRuta"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvPoblacionDetalleRutaActivity"
+        app:layout_constraintEnd_toEndOf="@+id/tvAltMaxDetalleRutaActivity"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDitanciaDetalleRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:paddingRight="15dp"
+        android:text="@string/distanciaRuta"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvDificultadDetalleRutaActivity"
+        app:layout_constraintEnd_toEndOf="@+id/tvAltMaxDetalleRutaActivity"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDificultadDetalleRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:paddingRight="15dp"
+        android:text="@string/dificultadRuta"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvDesnivelDetalleRutaActivity"
+        app:layout_constraintEnd_toEndOf="@+id/tvAltMaxDetalleRutaActivity"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDesnivelDetalleRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:paddingRight="15dp"
+        android:text="@string/desnivel"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvAltMaxDetalleRutaActivity"
+        app:layout_constraintEnd_toEndOf="@+id/tvAltMaxDetalleRutaActivity"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAltMinDetalleRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:paddingRight="15dp"
+        android:text="@string/AltMin"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btBackDetalleRuta"
+        app:layout_constraintEnd_toEndOf="@+id/tvAltMaxDetalleRutaActivity"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btBackDetalleRuta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/volver"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btFavorito"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/etDistanciaDetalleRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etDificultadDetalleRutaActivity"
+        app:layout_constraintEnd_toEndOf="@+id/etNombreDetalleRutaActivity"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tvDitanciaDetalleRutaActivity" />
+
+    <TextView
+        android:id="@+id/etDificultadDetalleRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDificultadDetalleRutaActivity"
+        app:layout_constraintEnd_toEndOf="@+id/etDistanciaDetalleRutaActivity"
+        app:layout_constraintStart_toEndOf="@+id/tvDificultadDetalleRutaActivity" />
+
+    <TextView
+        android:id="@+id/etDesnivelDetalleRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvAltMaxDetalleRutaActivity"
+        app:layout_constraintEnd_toEndOf="@+id/etDificultadDetalleRutaActivity"
+        app:layout_constraintStart_toEndOf="@+id/tvDesnivelDetalleRutaActivity"
+        app:layout_constraintTop_toBottomOf="@+id/etDificultadDetalleRutaActivity" />
+
+    <TextView
+        android:id="@+id/etAltMaxDetalleRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/etDesnivelDetalleRutaActivity"
+        app:layout_constraintStart_toEndOf="@+id/tvAltMaxDetalleRutaActivity"
+        app:layout_constraintTop_toBottomOf="@+id/etDesnivelDetalleRutaActivity" />
+
+    <TextView
+        android:id="@+id/etAltMinDetalleRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/etAltMaxDetalleRutaActivity"
+        app:layout_constraintStart_toEndOf="@+id/tvAltMinDetalleRutaActivity"
+        app:layout_constraintTop_toBottomOf="@+id/etAltMaxDetalleRutaActivity" />
+
+    <ImageView
+        android:id="@+id/ivMapaDetalleRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/tvNombreDetalleRutaActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btBorrarRuta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:text="borrar"
+        app:layout_constraintBottom_toBottomOf="@+id/btBackDetalleRuta"
+        app:layout_constraintEnd_toStartOf="@+id/btModificarRuta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btNoFavorito"
+        app:layout_constraintTop_toTopOf="@+id/btBackDetalleRuta"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btFavorito"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bt_fav"
+        android:text="@string/favoritoRuta"
+        app:layout_constraintBottom_toBottomOf="@+id/btBackDetalleRuta"
+        app:layout_constraintEnd_toStartOf="@+id/btNoFavorito"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btBackDetalleRuta"
+        app:layout_constraintTop_toTopOf="@+id/btBackDetalleRuta" />
+
+    <Button
+        android:id="@+id/btNoFavorito"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bt_no_fav"
+        android:text="@string/noFavoritoRuta"
+        app:layout_constraintBottom_toBottomOf="@+id/btBackDetalleRuta"
+        app:layout_constraintEnd_toStartOf="@+id/btBorrarRuta"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btFavorito"
+        app:layout_constraintTop_toTopOf="@+id/btBackDetalleRuta" />
+
+    <TextView
+        android:id="@+id/tvPoblacionDetalleRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:paddingRight="15dp"
+        android:text="@string/poblacion"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/etPoblacionDetalleRutaActivity"
+        app:layout_constraintEnd_toEndOf="@+id/tvAltMaxDetalleRutaActivity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etPoblacionDetalleRutaActivity" />
+
+    <TextView
+        android:id="@+id/etPoblacionDetalleRutaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/etDistanciaDetalleRutaActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPoblacionDetalleRutaActivity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

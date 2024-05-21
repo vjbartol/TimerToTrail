@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".proyect.activities.RegisterActivity">
+
+    <Button
+        android:id="@+id/btVolverRegisterActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/volver"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etPasswordRegisterActivity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordRegisterActivity" />
+
+    <EditText
+        android:id="@+id/etEmailRegisterActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/etPasswordRegisterActivity"
+        app:layout_constraintEnd_toEndOf="@+id/etNombreRegisterActivity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/etNombreRegisterActivity"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreRegisterActivity" />
+
+    <TextView
+        android:id="@+id/tvEmailRegisterActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etEmailRegisterActivity"
+        app:layout_constraintStart_toStartOf="@+id/etEmailRegisterActivity" />
+
+    <TextView
+        android:id="@+id/tvTittleRegisterActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#F2F2F2"
+        android:fontFamily="sans-serif"
+        android:text="@string/tituloRegistro"
+        android:textAlignment="center"
+        android:textColor="#040404"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etPasswordRegisterActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/tipoContraseña"
+        android:inputType="textPassword"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btRegistrarRegisterActivity"
+        app:layout_constraintEnd_toEndOf="@+id/etEmailRegisterActivity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/etEmailRegisterActivity"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailRegisterActivity" />
+
+    <TextView
+        android:id="@+id/tvPasswordRegisterActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etPasswordRegisterActivity"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordRegisterActivity" />
+
+    <TextView
+        android:id="@+id/tvNombreRegisterActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombreUsuario"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etNombreRegisterActivity"
+        app:layout_constraintStart_toStartOf="@+id/etNombreRegisterActivity" />
+
+    <EditText
+        android:id="@+id/etNombreRegisterActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textShortMessage"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/etEmailRegisterActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTittleRegisterActivity" />
+
+    <Button
+        android:id="@+id/btRegistrarRegisterActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/register"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btVolverRegisterActivity"
+        app:layout_constraintEnd_toEndOf="@+id/etPasswordRegisterActivity"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordRegisterActivity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

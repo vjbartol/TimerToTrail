@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".proyect.activities.FiltrarActivity">
+
+    <TextView
+        android:id="@+id/tvDificultadCabecera2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dificultadRuta"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDistanciaCabecera2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvDistanciaCabecera2"
+        app:layout_constraintTop_toTopOf="@+id/tvDistanciaCabecera2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvNombreCabecera2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:text="NOMBRE"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvPoblacionCabecera2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btFiltrarActivityFiltrar" />
+
+    <TextView
+        android:id="@+id/tvDistanciaCabecera2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/distanciaRuta"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNombreCabecera2"
+        app:layout_constraintEnd_toStartOf="@+id/tvDificultadCabecera2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvPoblacionCabecera2"
+        app:layout_constraintTop_toTopOf="@+id/tvNombreCabecera2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvTituloActivityFiltrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/tituloFiltrarRutas"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDificultadActivityFiltrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dificultadRuta"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/spDificultadActivityFiltrar"
+        app:layout_constraintStart_toStartOf="@+id/spDificultadActivityFiltrar"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloActivityFiltrar" />
+
+    <TextView
+        android:id="@+id/tvDistanciaActivityFiltrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distanciaRuta"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDificultadActivityFiltrar"
+        app:layout_constraintEnd_toEndOf="@+id/spDistanciaActivityFiltrar"
+        app:layout_constraintStart_toStartOf="@+id/spDistanciaActivityFiltrar"
+        app:layout_constraintTop_toTopOf="@+id/tvDificultadActivityFiltrar" />
+
+    <Spinner
+        android:id="@+id/spDificultadActivityFiltrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/spDistanciaActivityFiltrar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDificultadActivityFiltrar" />
+
+    <Spinner
+        android:id="@+id/spDistanciaActivityFiltrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/spDificultadActivityFiltrar"
+        app:layout_constraintEnd_toStartOf="@+id/spPoblacionActivityFiltrar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/spDificultadActivityFiltrar"
+        app:layout_constraintTop_toTopOf="@+id/spDificultadActivityFiltrar"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btFiltrarActivityFiltrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/filtrar"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spDificultadActivityFiltrar" />
+
+    <Button
+        android:id="@+id/btVolverMainFiltrarActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/volver"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRutasFiltrarActivity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/btVolverMainFiltrarActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSinResultados"
+        tools:listitem="@layout/item_lista_rutas" />
+
+    <TextView
+        android:id="@+id/tvPoblacionActivityFiltrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/poblacion"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDistanciaActivityFiltrar"
+        app:layout_constraintEnd_toEndOf="@+id/spPoblacionActivityFiltrar"
+        app:layout_constraintStart_toStartOf="@+id/spPoblacionActivityFiltrar"
+        app:layout_constraintTop_toTopOf="@+id/tvDistanciaActivityFiltrar" />
+
+    <Spinner
+        android:id="@+id/spPoblacionActivityFiltrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spDistanciaActivityFiltrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/spDistanciaActivityFiltrar"
+        app:layout_constraintTop_toTopOf="@+id/spDistanciaActivityFiltrar" />
+
+    <TextView
+        android:id="@+id/tvPoblacionCabecera2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="POBLACION"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvNombreCabecera2"
+        app:layout_constraintEnd_toStartOf="@+id/tvDistanciaCabecera2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvNombreCabecera2"
+        app:layout_constraintTop_toTopOf="@+id/tvNombreCabecera2" />
+
+    <TextView
+        android:id="@+id/tvSinResultados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/filtroSinResultados"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNombreCabecera2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

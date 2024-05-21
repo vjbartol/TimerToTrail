@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    tools:context=".proyect.activities.LoginActivity">
+
+    <TextView
+        android:id="@+id/tvNombreLoginActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etPasswordLoginActivity"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordLoginActivity" />
+
+    <ImageView
+        android:id="@+id/ivLogoLoginActivity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/logo"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/etEmailLoginActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/etPasswordLoginActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/tipoContraseña"
+        android:inputType="textPassword"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btLoginLoginActivity"
+        app:layout_constraintEnd_toEndOf="@+id/etEmailLoginActivity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/etEmailLoginActivity"
+        app:layout_constraintTop_toBottomOf="@+id/etEmailLoginActivity" />
+
+    <EditText
+        android:id="@+id/etEmailLoginActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#757575"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/etPasswordLoginActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogoLoginActivity"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/btLoginLoginActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="16dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/login"
+        android:textColor="#0F1010"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btRegisterLoginActivity"
+        app:layout_constraintEnd_toEndOf="@+id/btRegisterLoginActivity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btRegisterLoginActivity"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordLoginActivity" />
+
+    <Button
+        android:id="@+id/btRegisterLoginActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#03A9F4"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/register"
+        android:textColor="#0B0A0A"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/etPasswordLoginActivity"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etPasswordLoginActivity"
+        app:layout_constraintTop_toBottomOf="@+id/btLoginLoginActivity" />
+
+    <TextView
+        android:id="@+id/tvEmailActivityLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etEmailLoginActivity"
+        app:layout_constraintStart_toStartOf="@+id/etEmailLoginActivity" />
+
+    <TextView
+        android:id="@+id/tvRestablecerContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/restablecerContraseña"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswordLoginActivity" />
+</androidx.constraintlayout.widget.ConstraintLayout>
