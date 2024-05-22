@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#5BCCFF"/> <!-- Color de la sombra (negro con transparencia) -->
+            <corners android:radius="80dp"/> <!-- Radio de las esquinas de la sombra -->
+            <padding android:right="2dp" android:bottom="2dp"/> <!-- Ajusta el desplazamiento de la sombra -->
+        </shape>
+    </item>
+    <item android:bottom="4dp">
+        <shape>
+            <solid android:color="#03A9F4"/> <!-- Color de fondo del botón -->
+            <corners android:radius="80dp"/> <!-- Radio de las esquinas del botón -->
+        </shape>
+    </item>
+</layer-list>
