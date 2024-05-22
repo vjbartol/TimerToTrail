@@ -101,7 +101,7 @@ public class TablonActivity extends AppCompatActivity {
                             ordenarPosts(listaPosts);
                             crearAdaptador(listaPosts);
                         } else {
-                            Log.d(TAG, "Error descargando datos", task.getException());
+                            Log.d(TAG, "Error al descargar datos", task.getException());
                         }
                     }
                 });
@@ -152,7 +152,7 @@ public class TablonActivity extends AppCompatActivity {
     private void delete(int posicion, List<Post> listaPosts) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Confirmar eliminación");
-        builder.setMessage("¿Eliminar Post?");
+        builder.setMessage("¿Eliminar el Post?");
 
         builder.setPositiveButton("Sí", new DialogInterface.OnClickListener() {
             @Override
